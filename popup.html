@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>URL Content Processor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="marked.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>内容提取</h2>
+      </div>
+      <div class="content">
+        <div class="input-group">
+          <button id="processButton">
+            <span>🔍</span>
+            <span>提取当前页面</span>
+          </button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+          <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
+          <span>正在生成摘要...</span>
+        </div>
+
+        <div id="result" class="result hidden">
+          <div class="result-header">
+            <h3>处理结果</h3>
+            <button id="copyButton" class="icon-button">
+              <span>📋</span>
+            </button>
+          </div>
+          <div id="resultContent" class="markdown-body"></div>
+        </div>
+
+        <div id="error" class="error hidden">
+          <span>⚠️</span>
+          <span id="errorText"></span>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

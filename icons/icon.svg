@@ -1,0 +1,8 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="128" height="128" rx="24" fill="#007AFF"/>
+  <!-- 卡片形状 -->
+  <rect x="24" y="24" width="80" height="80" rx="8" fill="white" opacity="0.2"/>
+  <!-- 文本线条 -->
+  <path d="M40 48h48M40 64h32M40 80h48" stroke="white" stroke-width="6" stroke-linecap="round"/>
+</svg> 
